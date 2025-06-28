@@ -27,10 +27,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 🌐 Install rfbrowser and Playwright
-        run: |
-          rfbrowser init --skip-browsers
-          playwright install chromium
-
       - name: 🤖 Run stock checker
         run: python run.py
